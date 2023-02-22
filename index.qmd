@@ -1,0 +1,82 @@
+---
+title: "Making R packages"
+author: "Prashanth Velayudhan"
+format:
+  revealjs:
+    incremental: true
+    chalkboard: true
+    preview-links: true
+execute:
+    echo: true
+---
+
+# In the morning
+
+## Breakfast
+
+- Some non-executable code
+ 
+```{.python code-line-numbers="|6-8|2"}
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+# In the evening
+
+## Dinner
+
+```{python}
+#| output-location: fragment
+#| code-line-numbers: "|6|9"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+
+## Multiple columns
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Left column
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+
+::::
+
+
+## Hey look at this
+
+::: {.panel-tabset}
+
+### Tab A
+
+Content for `Tab A`
+
+### Tab B
+
+Content for `Tab B`
+
+[link](https://quarto.org/docs/presentations/revealjs/presenting.html#preview-links)
+
+:::
