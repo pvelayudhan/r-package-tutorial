@@ -1,4 +1,12 @@
-1. In the console, setwd to where you want to work on the package
+# System prep
+1. Upgrade R to latest version (at your own risk)
+2. `install.packages(c("devtools", "roxygen2", "testthat", "knitr"))`
+3. install RTools: 
+
+
+
+
+1. Visually using RStudio file explorer find data location (three dots). Once there, use gear to set as wd. Note the line in console if you want to easily do this later without all the clicking.
 2. `library(devtools)`
 3. `create_package("demopackage")`
 4. `use_r("gratio")`
